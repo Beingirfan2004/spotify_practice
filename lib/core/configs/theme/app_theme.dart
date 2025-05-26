@@ -9,11 +9,33 @@ class AppTheme {
     brightness: Brightness.light,
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
+        elevation: 0,
         backgroundColor: AppColors.primary,
-        textStyle: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+        textStyle: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(30.0),
         ),
+      ),
+    ),
+    inputDecorationTheme: InputDecorationTheme(
+      filled: true,
+      fillColor: Colors.transparent,
+      contentPadding: EdgeInsets.all(30),
+      hintStyle: TextStyle(
+        color: Color(0xff383838),
+        fontWeight: FontWeight.w500,
+      ),
+      enabledBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(30),
+        borderSide: const BorderSide(width: 0.4, color: Colors.black),
+      ),
+      border: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(30),
+        borderSide: const BorderSide(width: 0.4, color: Colors.black),
+      ),
+      focusedBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(30),
+        borderSide: const BorderSide(width: 1.5, color: AppColors.primary),
       ),
     ),
   );
@@ -24,11 +46,33 @@ class AppTheme {
     brightness: Brightness.dark,
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
+        elevation: 0,
         backgroundColor: AppColors.primary,
-        textStyle: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+        textStyle: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(30.0),
         ),
+      ),
+    ),
+    inputDecorationTheme: InputDecorationTheme(
+      filled: true,
+      fillColor: Colors.transparent,
+      contentPadding: EdgeInsets.all(30),
+      hintStyle: TextStyle(
+        color: Color(0xffA7A7A7),
+        fontWeight: FontWeight.w500,
+      ),
+      enabledBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(30),
+        borderSide: const BorderSide(width: 0.4, color: Colors.white),
+      ),
+      border: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(30),
+        borderSide: const BorderSide(width: 0.4, color: Colors.white),
+      ),
+      focusedBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(30),
+        borderSide: const BorderSide(width: 1.5, color: AppColors.primary),
       ),
     ),
   );
